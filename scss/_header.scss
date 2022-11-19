@@ -1,0 +1,138 @@
+.header{
+    border-bottom: 1px solid #EEEEEE;
+}
+.header-underlines::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-logo);
+    border-radius: 4px;
+  }
+.header__nav{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media (min-width:320px)and(max-width:480px) {
+        align-items: right;
+      }
+}
+.hero-logo {
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    @media (min-width:320px)and(max-width:480px) {
+      margin-right: auto;      
+    }
+  }
+  
+  .menu__icon{
+    background-color: #ffffff;
+  }
+  .header__menu {
+    list-style: none;
+    display: flex;
+    margin-left: 95px;
+
+    @media (min-width:320px)and(max-width:480px) {
+        display: none;
+      }
+  }
+  .header__item:not(:last-child) {
+    display: block;
+    margin-right: 50px;
+  }
+  .header__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media (min-width:320px)and(max-width:480px) {
+      display: none;      
+    }
+  }
+  .header__link {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    transition-duration: 250ms;
+
+    &:hover {
+      color: var(--color-logo);
+    }
+    &:focus {
+      color: var(--color-logo);
+    }
+  }
+  
+  .header__contacts {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding-left: 0px;
+
+    @media (min-width:320px)and(max-width:480px) {
+      display: none;      
+    }
+  }
+  .contacts-menu__item{
+    @media (min-width:320px)and(max-width:480px) {
+     display: none; 
+    }
+  }
+  .contacts-menu__item:first-child {
+    margin-right: 50px;
+  }
+
+  .contacts-menu__link {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    transition-duration: 250ms;
+
+    @media (min-width:320px)and(max-width:480px) {
+      display: none;      
+    }
+
+    &:hover {
+      color: var(--color-logo);
+      letter-spacing: 0.02em;
+    }
+    &:focus {
+      color: var(--color-logo);
+      letter-spacing: 0.02em;
+    }
+  }
+  
+  .contacts-menu__icon {
+    align-content: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: #757575;
+    transition-duration: 250ms;
+
+    .contacts-menu__link:hover & {
+      fill: var(--color-logo);
+    }
+    .contacts-menu__link:focus & {
+      fill: var(--color-logo);
+    }
+  }
+  
