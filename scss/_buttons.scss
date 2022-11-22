@@ -1,21 +1,24 @@
 .menu__button {
   background-color: #ffffff;
   border-style: none;
+  display: none;
 
   @media (min-width:320px)and(max-width:480px) {
+    display: contents;
     margin-left: auto;
   }
 }
 .button-list {
-    list-style: none;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     margin-bottom: 50px;
-  }
-  
-  .button-item + .button-item {
-    margin-left: 8px;
+    gap: 8px;
+
+    @media (min-width:320px)and(max-width:480px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
   }
   .button {
     padding: 6px 25px;
@@ -70,15 +73,18 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    padding: 0;
+    padding: 6px;
     border: 0px;
     background-color: #ffffff;
+
+    &:hover{
+      fill: var(--color-logo);
+    }
   }
   
   .button-icon {
     width: 30px;
     height: 30px;
-    padding: 5px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition-duration: 250ms;
@@ -124,7 +130,7 @@
     line-height: 30px;
     color: #FFFFFF;
 
-    @media (min-width:480px) {
+    @media (min-width:320px)and(max-width:480px) {
         text-align: center;
       }
   }
