@@ -1,6 +1,11 @@
 :root {
     --color-primary:#212121;
     --color-logo: #2196f3;
+    @media (min-width: 320px)and(max-width:1199px) {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .container {
     display: block;
@@ -10,10 +15,21 @@
     margin-right: auto;
     width: 1200px;
 
-    @media (min-width:320px)and(max-width:480px) {
-      width: auto;
-      padding-right: 15px;
-    }
+    @media screen and (min-width: 320px) {
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
+    /*@media (min-width:481px)and(max-width:768px) {
+      width: 100%;
+      padding: 0px 15px;
+    }*/
   }
     
   h1, h2, h3, h4, h5, h6, ul, p {

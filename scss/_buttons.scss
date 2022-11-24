@@ -3,8 +3,8 @@
   border-style: none;
   display: none;
 
-  @media (min-width:320px)and(max-width:480px) {
-    display: contents;
+  @media (min-width:320px)and(max-width:768px) {
+    display: flex;
     margin-left: auto;
   }
 }
@@ -15,7 +15,7 @@
     margin-bottom: 50px;
     gap: 8px;
 
-    @media (min-width:320px)and(max-width:480px) {
+    @media (min-width:320px)and(max-width:768px) {
       justify-content: flex-start;
       flex-wrap: wrap;
     }
@@ -130,7 +130,7 @@
     line-height: 30px;
     color: #FFFFFF;
 
-    @media (min-width:320px)and(max-width:480px) {
+    @media (min-width:320px)and(max-width:768px) {
         text-align: center;
       }
   }

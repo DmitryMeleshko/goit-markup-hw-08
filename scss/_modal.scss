@@ -22,6 +22,9 @@
     @media (min-width:320px)and(max-width:480px) {
       width: 450px;
     }
+    @media (min-width:481px)and(max-width:768px) {
+      width: 450px;
+    }
   }
   
   .modal.is-hidden {
@@ -127,6 +130,9 @@
     @media (min-width:320px)and(max-width:480px) {
       left: 0px;
     }
+    @media (min-width:481px)and(max-width:768px) {
+      left: 0px;
+    }
   }
   
   .checkbox:checked + .checkbox-item {
@@ -146,6 +152,12 @@
       line-height: 1.16;
       letter-spacing: 0.03em;
     }
+    @media (min-width:481px)and(max-width:768px){
+      font-size: 12px;
+      line-height: 1.21;
+      letter-spacing: 0.03em;
+    }
+        
   }
   .terms-link {
     color: var(--color-logo);
