@@ -3,13 +3,13 @@
   }
 .footer {
     background-color: #2F303A;
-    @media (min-width:320px)and(max-width:1199px) {
-        width: 100%;
+    @media (min-width:320px)and(max-width:768px) {
+        width: 768px;
       }
     @media (min-width:768px)and(max-width:1199px) {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 1200px;
     }
   }
   .footer__container {
@@ -97,12 +97,12 @@
   
   
   .invitation {
-    margin-right: auto;
+    
     width: 205px;
 
-    @media (min-width:320px)and(max-width:768px) {
-        width: 450px;
+    @media (min-width:320px)and(max-width:1199px) {
         text-align: center;
+        width: 450px;
         margin-bottom: 60px;
       }
     /*@media (min-width:481px)and(max-width:768px){
@@ -134,7 +134,7 @@
   .subscription {
     gap: 12px;
 
-    @media (min-width:320px)and(max-width:768px) {
+    @media (min-width:768px)and(max-width:1199px) {
         width: 450px;
         justify-content: center;
       }
@@ -152,9 +152,9 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
-    @media (min-width:320px)and(max-width:768px) {
-      display: block;
-      text-align: center;
+    @media (min-width:320px)and(max-width:1199px) {
+      justify-content: center;
+      align-items: center;
       }
     /*@media (min-width:481px)and(max-width:768px) {
       display: block;
@@ -168,8 +168,9 @@
     align-items: center;
 
     
-    @media (min-width:320px)and(max-width:768px) {
+    @media (min-width:320px)and(max-width:1199px) {
       display: block;
+      flex-direction: column;
     }
     /*@media (min-width:481px)and(max-width:768px) {
       display: block;
@@ -190,7 +191,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media (min-width:320px)and(max-width:768px) {
+    @media (min-width:320px)and(max-width:1199px) {
         width: 450px;
         text-align: left;
         margin-bottom: 20px;
