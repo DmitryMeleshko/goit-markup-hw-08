@@ -100,7 +100,6 @@
   .agreement-aria {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: auto;
     margin-bottom: 30px;
@@ -124,10 +123,10 @@
     border: #000000 1px solid;
     transition-duration: 250ms;
 
-    @media (min-width:320px)and(max-width:480px) {
+    @media (min-width:320px)and(max-width:766px) {
       left: 0px;
     }
-    @media (min-width:481px)and(max-width:768px) {
+    @media (min-width:768px)and(max-width:1199px) {
       left: 0px;
     }
   }
@@ -144,12 +143,12 @@
     letter-spacing: 0.03em;
     color: #757575;
 
-    @media (min-width:320px)and(max-width:480px) {
+    @media (min-width:320px)and(max-width:766px) {
       font-size: 12px;
       line-height: 1.16;
       letter-spacing: 0.03em;
     }
-    @media (min-width:481px)and(max-width:768px){
+    @media (min-width:768px)and(max-width:1199px){
       font-size: 12px;
       line-height: 1.21;
       letter-spacing: 0.03em;
