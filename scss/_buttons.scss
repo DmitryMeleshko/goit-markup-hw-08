@@ -3,9 +3,8 @@
   border-style: none;
   display: none;
 
-  @media (min-width:320px)and(max-width:768px) {
+  @media (max-width:768px) {
     display: flex;
-    margin-left: auto;
   }
 }
 .button-list {

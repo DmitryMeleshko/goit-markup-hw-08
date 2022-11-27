@@ -3,13 +3,10 @@
   }
 .footer {
     background-color: #2F303A;
-    @media (min-width:320px)and(max-width:768px) {
-        
+    @media (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
       }
-    @media (min-width:768px)and(max-width:1199px) {
-      display: flex;
-      flex-direction: column;
-    }
   }
   .footer__container {
     display: flex;
@@ -18,8 +15,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media (min-width:320px)and(max-width:768px) {
-      display: block;
+    @media (max-width:768px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
     @media (min-width:768px)and(max-width:1199px) {
       display: flex;
@@ -38,21 +37,17 @@
     letter-spacing: 0.03em;
   }
   .footer__contacts {
-    width: 230px;
-    margin-right: 70px;
 
-    @media (min-width:320px)and(max-width:767px) {
-        width: 450px;
+    @media (max-width:768px) {
         text-align: center;
         margin-bottom: 60px;
       }
-    @media (min-width:320px)and(max-width:1199px) {
+    @media (max-width:1199px) {
         margin-bottom: 60px;
         margin-right: 0;
       }
   }
   .footer__list {
-    -webkit-padding-start: 0;
     padding-inline-start: 0;
     list-style: none;
     background-color: #2F303A;
@@ -98,10 +93,11 @@
   .invitation {
     
     width: 205px;
-
-    @media (min-width:320px)and(max-width:1199px) {
+    @media (max-width:767px) {
+      margin: auto;
+    }
+    @media (max-width:1199px) {
         text-align: center;
-        width: 450px;
         margin-bottom: 60px;
       }
     /*@media (min-width:481px)and(max-width:768px){
@@ -151,7 +147,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
-    @media (min-width:320px)and(max-width:1199px) {
+    @media (max-width:1199px) {
       justify-content: center;
       align-items: center;
       }
@@ -167,7 +163,7 @@
     align-items: center;
 
     
-    @media (min-width:320px)and(max-width:1199px) {
+    @media (max-width:1199px) {
       display: block;
       flex-direction: column;
     }
@@ -190,8 +186,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media (min-width:320px)and(max-width:1199px) {
-        width: 450px;
+    @media (max-width:480px) {
+        width: 100%;
+      }
+    @media (min-width:480px)and(max-width:1199px){
+      width: 450px;
+    }
+    @media (max-width:1199px) {
         text-align: left;
         margin-bottom: 20px;
       }
